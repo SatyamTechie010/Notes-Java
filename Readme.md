@@ -68,3 +68,104 @@ public class JdbcQ1 {
     }
 }
 ```
+
+
+# Swing Java Program Template
+
+```java
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class ProgramName implements ActionListener {
+
+    // ================================
+    // STEP 1: Declare the JFrame
+    // Main window of the application.
+    // ================================
+    JFrame frame;
+
+    // ================================
+    // STEP 2: Declare GUI Components
+    // Example:
+    // JLabel label;
+    // JTextField textField;
+    // JButton button;
+    // JCheckBox checkBox;
+    // JComboBox<String> comboBox;
+    // ================================
+
+    ProgramName() {
+
+        // ================================
+        // STEP 3: Create JFrame
+        // ================================
+        frame = new JFrame("Title");
+
+        // Set window size
+        frame.setSize(400, 300);
+
+        // Use Absolute Layout
+        frame.setLayout(null);
+
+        // Close application when window closes
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // ===================================================
+        // STEP 4: Create Components
+        // Example:
+        //
+        // label = new JLabel("Enter Name");
+        // textField = new JTextField();
+        // button = new JButton("Submit");
+        //
+        // ===================================================
+
+        // ===================================================
+        // STEP 5: Set Component Positions
+        // Syntax:
+        // component.setBounds(x, y, width, height);
+        // ===================================================
+
+        // ===================================================
+        // STEP 6: Add Components to Frame
+        // Example:
+        // frame.add(label);
+        // frame.add(textField);
+        // frame.add(button);
+        // ===================================================
+
+        // ===================================================
+        // STEP 7: Register Event Listeners
+        // Example:
+        // button.addActionListener(this);
+        // ===================================================
+
+        // ===================================================
+        // STEP 8: Display the Window
+        // ===================================================
+        frame.setVisible(true);
+    }
+
+    // ===================================================
+    // STEP 9: Handle Button Clicks and Events
+    // ===================================================
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+        // Example:
+        // if(e.getSource() == button){
+        //     // Write your logic here
+        // }
+    }
+
+    // ===================================================
+    // STEP 10: Program Execution Starts Here
+    // ===================================================
+    public static void main(String[] args) {
+
+        // Create object to launch GUI
+        new ProgramName();
+    }
+}
+```
