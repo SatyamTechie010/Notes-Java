@@ -1,4 +1,4 @@
-# JDBC PostgreSQL Connection with Comments
+# JDBC PostgreSQL Connection Template
 
 ```java
 import java.sql.*;
@@ -13,7 +13,7 @@ public class JdbcQ1 {
             // STEP 1: Specify the JDBC Driver
             // Trick: "Driver ko pehle load karo."
             // ================================
-            String driver = "org.postgresql.Driver";
+            String driver = "org.postgresql.Driver"
 
             // ================================
             // STEP 2: Database URL
